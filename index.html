@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>Mir Zemli</title>
+
+    <!-- JQuery slider-->
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css" />
+    <!-- JQuery slider-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/variable.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="img_header header-sector">
+            <h1 class="invisible">«Мир Земли» - земельные участки в подмосковье по Ярославскому шоссе.</h1>
+
+            <div class="wrapper_menu">
+                <div class="home-block">
+                    <a href="index.html" class="home"></a>
+
+                    <div class="menu menu-sector">
+                        <hr class="menu-line">
+                        <nav class="menu-active">
+                            <ul>
+                                <li class="menu-item"><a href="index.html">Главная</a></li>
+                                <li class="menu-item"><a href="contacts.html">Контакты</a></li>
+
+                            </ul>
+                        </nav>
+
+                    </div>
+                </div>
+                <div class="tel">
+                    <div class="tel-img"></div>
+                    <a class="tel-call" href="tel:+79397775765">+ 7 939 777 57 65</a>
+                </div>
+            </div>
+
+
+            <div class="logo logo-sector">
+                <picture class="logo-img">
+                    <img class="img-header" src="assets/images/logo.svg" alt="Логотип компании Мир земли">
+                </picture>
+                <p class="logo-text logo-text__sector">Купить земельные участки<br> сельхозназначения <br> в
+                    Сергиево-Посадском районе</p>
+                <p class="logo-text_mobil">Купить <br>земельные участки <br>сельхозназначения </p>
+            </div>
+
+
+        </header>
+        <main>
+            <div class="form-mobil">
+                <button class="btn-filter"></button>
+
+                <button class="btn-reset_mobil">Сбросить фильтр</button>
+                <div class="popap">
+
+                    <form class="calculate-style" action="#">
+
+                        <label class="label-price">Цена(руб./сот.):
+                            <input type="text" id="amount-mobile">
+                            <input type="text" id="amount2-mobile">
+
+                            <div class="slider-price" id="slider-range-mobile"></div>
+                        </label>
+
+                        <label class="label-price">Площадь(сот.):
+                            <input type="text" id="input-square-mobile">
+                            <input type="text" id="input-square2-mobile">
+
+                            <div class="slider-price" id="slider-range-square-mobile"></div>
+                        </label>
+
+                        <p class="label-price">Тип сделки:</p>
+                        <br>
+
+
+                        <input class="radio-btn" type="radio" name="type-transaction" checked="checked" value="rent"
+                            id="rent">
+                        <label class="radio-btn_label" for="rent">Аренда</label><br>
+                        <input class="radio-btn" type="radio" name="type-transaction" value="sale" id="sale">
+                        <label class="radio-btn_label" for="sale">Продажа</label>
+                        <br><br>
+                        <input class="form-btn" type="submit" value="ПРИМЕНИТЬ">
+                        <input class="btn-reset" type="reset" value="Сбросить">
+
+                    </form>
+
+
+
+                </div>
+            </div>
+            <div class="container">
+
+
+                <div class="calculate">
+                    <form class="calculate-style" action="#">
+
+                        <label class="label-price">Цена(руб./сот.):
+                            <input type="text" id="amount">
+                            <input type="text" id="amount2">
+
+                            <div class="slider-price" id="slider-range"></div>
+                        </label>
+
+                        <label class="label-price">Площадь(сот.):
+                            <input type="text" id="input-square">
+                            <input type="text" id="input-square2">
+
+                            <div class="slider-price" id="slider-range-square"></div>
+                        </label>
+
+                        <p class="label-price">Тип сделки:</p>
+                        <br>
+
+
+                        <input class="radio-btn" type="radio" name="type-transaction" checked="checked" value="rent"
+                            id="rent">
+                        <label class="radio-btn_label" for="rent">Аренда</label><br>
+                        <input class="radio-btn" type="radio" name="type-transaction" value="sales" id="sale">
+                        <label class="radio-btn_label" for="sale">Продажа</label>
+                        <br><br>
+                        <input class="form-btn" type="submit" value="ПРИМЕНИТЬ">
+                        <input class="btn-reset" type="reset" value="Сбросить">
+
+                    </form>
+
+
+                </div>
+                <div class="content">
+                    <div class="map">
+                        <div class="img-map">
+                            <div class="square"></div>
+                            <div class="info-on-map">
+
+
+                                <div class="info-on-map__content">
+                                    <div class="info-on-map__title">Участок №34-186</div>
+                                    <div class="info-on-map__text">
+
+                                        Кадастровый номер: <br>
+                                        50:05:0040247:186 <br>
+                                        Площадь: 28,7 Га <br>
+                                        Цена за Га: 1 500 000 руб.<br>
+                                        Цена за участок: 43 050 000 руб.<br>
+                                        Территориальная зона: СХ-1
+
+                                    </div>
+                                    <a href="sector.html" class="info-on-map__btn">Подробнее..</a>
+                                </div>
+
+                                <div class="slider-on-map">
+
+                                    <div class="slider slick-item-map">
+                                        <div><img src="assets/images/item-img1.jpg" alt=""></div>
+                                        <div><img src="assets/images/img-on-map.jpg" alt=""></div>
+                                        <div><img src="assets/images/img-on-map.jpg" alt=""></div>
+                                    </div>
+                                </div>
+
+
+                                <div class="info-on-map__slider-left"></div>
+                                <div class="info-on-map__slider-right"></div>
+                            </div>
+                            <div class="square_top"></div>
+                        </div>
+                        <div class="img-map_mobil">
+
+                            <div class="info-on-map">
+                                <div class="square"></div>
+                                <div class="square_top"></div>
+                                <div class="info-on-map__content">
+                                    <div class="info-on-map__title">Участок №34-186</div>
+                                    <div class="info-on-map__text">
+
+                                        Кадастровый номер: <br>
+                                        50:05:0040247:186 <br>
+                                        Площадь: 28,7 Га <br>
+                                        Цена за Га: 1 500 000 руб.<br>
+                                        Цена за участок: 43 050 000 руб.<br>
+                                        Территориальная зона: СХ-1
+
+                                    </div>
+                                    <a href="#" class="info-on-map__btn">Подробнее..</a>
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button class="btn-reset_mobil btn-filter_reset">Свернуть карту</button>
+                    <button class="btn-reset_mobil btn-filter_reset btn-open_map">Показать карту</button>
+                    <section class="content-items">
+
+
+
+
+                        <div class="inner-item">
+                            <p class="item-title">Земельный участок, 33.16 сот.</p>
+
+
+                            <div class="slider slick-item">
+                                <div><img class="item-img" src="assets/images/item-img1.jpg" alt=""></div>
+                                <div><img class="item-img" src="assets/images/item-img2.jpg" alt=""></div>
+                                <div><img class="item-img" src="assets/images/item-img1.jpg" alt=""></div>
+                            </div>
+
+                            <p class="item-text">
+                                Кадастровый номер: 50:05:0060545:8 <br>
+                                Площадь: 47,32 <br>
+                                Цена за Га: 100 000 руб.<br>
+                                Стоимость аренды: 1 000 руб. в мес. за Га <br>
+                                Территориальная зона: СХ-3 с ограничениями<br>
+                            </p>
+                            <h2 class="item-price">4 732 000 руб.</h2>
+                            <div class="truncate-text">
+                                <p>
+                                    Описание: Участок находится в зоне объекта
+                                    культурного наследия, что накладывает ограничения на строительство.
+                                </p>
+                            </div>
+
+                            <a href="#" class="item-btn">Подробнее..</a>
+                        </div>
+
+                        <div class="inner-item">
+                            <p class="item-title">Продается участок,
+                                садовое товарищество Топограф</p>
+                            <div class="slider slick-item">
+                                <div><img class="item-img" src="assets/images/item-img2.jpg" alt=""></div>
+                                <div><img class="item-img" src="assets/images/item-img1.jpg" alt=""></div>
+                                <div><img class="item-img" src="assets/images/item-img2.jpg" alt=""></div>
+                            </div>
+
+                            <p class="item-text">
+                                Кадастровый номер: 50:05:0060545:8 <br>
+                                Площадь: 47,32 <br>
+                                Цена за Га: 100 000 руб.<br>
+                                Стоимость аренды: 1 000 руб. в мес. за Га <br>
+                                Территориальная зона: СХ-3 с ограничениями<br>
+                            </p>
+                            <h2 class="item-price">4 732 000 руб.</h2>
+                            <div class="truncate-text">
+                                <p class="item-text__description">
+                                    Описание: Участок находится в зоне объекта
+                                    культурного наследия, что накладывает ограничения на строительство.
+                                </p>
+                            </div>
+
+                            <a href="#" class="item-btn">Подробнее..</a>
+                        </div>
+                    </section>
+
+                    <section class="content-items">
+                        <div class="inner-item">
+                            <p class="item-title">Земельный участок, 33.16 сот.</p>
+                            <div class="slider slick-item">
+                                <div><img class="item-img" src="assets/images/item-img1.jpg" alt=""></div>
+                                <div><img class="item-img" src="assets/images/item-img2.jpg" alt=""></div>
+                                <div><img class="item-img" src="assets/images/item-img1.jpg" alt=""></div>
+                            </div>
+
+                            <p class="item-text">
+                                Кадастровый номер: 50:05:0060545:8 <br>
+                                Площадь: 47,32 <br>
+                                Цена за Га: 100 000 руб.<br>
+                                Стоимость аренды: 1 000 руб. в мес. за Га <br>
+                                Территориальная зона: СХ-3 с ограничениями<br>
+                            </p>
+                            <h2 class="item-price">4 732 000 руб.</h2>
+                            <div class="truncate-text">
+                                <p class="item-text__description">
+                                    Описание: Участок находится в зоне объекта
+                                    культурного наследия, что накладывает ограничения на строительство.
+                                </p>
+                            </div>
+
+                            <a href="#" class="item-btn">Подробнее..</a>
+                        </div>
+
+                        <div class="inner-item">
+                            <p class="item-title">Продается участок,
+                                садовое товарищество Топограф</p>
+                            <div class="slider slick-item">
+                                <div><img class="item-img" src="assets/images/item-img2.jpg" alt=""></div>
+                                <div><img class="item-img" src="assets/images/item-img1.jpg" alt=""></div>
+                                <div><img class="item-img" src="assets/images/item-img2.jpg" alt=""></div>
+                            </div>
+
+                            <p class="item-text">
+                                Кадастровый номер: 50:05:0060545:8 <br>
+                                Площадь: 47,32 <br>
+                                Цена за Га: 100 000 руб.<br>
+                                Стоимость аренды: 1 000 руб. в мес. за Га <br>
+                                Территориальная зона: СХ-3 с ограничениями<br>
+                            </p>
+                            <h2 class="item-price">4 732 000 руб.</h2>
+                            <div class="truncate-text">
+                                <p class="item-text__description">
+                                    Описание: Участок находится в зоне объекта
+                                    культурного наследия, что накладывает ограничения на строительство.
+                                </p>
+                            </div>
+
+                            <a href="#" class="item-btn">Подробнее..</a>
+                        </div>
+                    </section>
+
+                    <div class="pages">
+                        <div class="pages-item pages-item_active">1</div>
+                        <div class="pages-item">2</div>
+                        <div class="pages-item">3</div>
+                        <div class="pages-item pages-item_next">Далее</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </main>
+        <footer>
+            <div class="copyright">
+                © 2022 «Мир Земли» - земельные участки в подмосковье по Ярославскому шоссе. | it.ntt
+            </div>
+        </footer>
+        <script src="assets/js/menu.js"></script>
+        <script src="assets/js/map.js"></script>
+        <script src="assets/js/popap-filter.js"></script>
+        <script src="assets/js/filter-mobile.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="assets/slick/slick.min.js"></script>
+        <script src="assets/js/main.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+        <script src="assets/js/touch-punch.js"></script>
+        <script src="assets/js/slider-range.js"></script>
+    </div>
+
+
+</body>
+
+</html>
